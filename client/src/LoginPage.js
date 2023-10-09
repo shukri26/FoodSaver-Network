@@ -1,7 +1,6 @@
-// LoginPage.js
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Form, FormGroup, Label, Input, Button } from 'reactstrap'; // Import Reactstrap components
 import './Login.css'; // Import the CSS file
 
 function LoginPage() {
@@ -18,29 +17,29 @@ function LoginPage() {
   return (
     <div className="container">
       <h2>Login</h2>
-      <form>
-        <div>
-          <label htmlFor="username">Username:</label>
-          <input
+      <Form>
+        <FormGroup>
+          <Label for="username">Username:</Label>
+          <Input
             type="text"
             id="username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
-        </div>
-        <div>
-          <label htmlFor="password">Password:</label>
-          <input
+        </FormGroup>
+        <FormGroup>
+          <Label for="password">Password:</Label>
+          <Input
             type="password"
             id="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-        </div>
-        <button type="button" onClick={handleLogin}>
+        </FormGroup>
+        <Button color="primary" onClick={handleLogin}>
           Login
-        </button>
-      </form>
+        </Button>
+      </Form>
     </div>
   );
 }

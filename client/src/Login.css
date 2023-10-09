@@ -2,78 +2,78 @@
 
 /* Background gradient */
 body {
-    background: linear-gradient(to right, #f06, #9f6);
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #f06, #9f6);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Login container */
+.container {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Login form styles */
+h2 {
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Keyframes animation for button */
+@keyframes buttonPulse {
+  0% {
+    transform: scale(1);
   }
-  
-  /* Login container */
-  .container {
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    width: 100%;
-    text-align: center;
+  50% {
+    transform: scale(1.1);
   }
-  
-  /* Login form styles */
-  h2 {
-    color: #333;
+  100% {
+    transform: scale(1);
   }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  input[type="text"],
-  input[type="password"] {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    width: 100%;
-    font-size: 16px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Keyframes animation for button */
-  @keyframes buttonPulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  
-  /* Apply animation to the button */
-  button:focus {
-    animation: buttonPulse 1s infinite;
-  }
-  
-  
+}
+
+/* Apply animation to the button */
+button:focus {
+  animation: buttonPulse 1s infinite;
+}
+
+/* Additional styles or animations can be added as needed */

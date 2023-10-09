@@ -1,0 +1,68 @@
+/* FoodListing.css */
+
+.container {
+    display: flex; /* Use flexbox to arrange the forms side by side */
+    justify-content: space-between; /* Add space between the forms */
+    gap: 40px; /* Add more space between the forms */
+  }
+  
+  .form-container {
+    flex: 1; /* Allow forms to take up available space */
+  }
+  
+  .form {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    width: 100%; /* Make forms take the entire width */
+  }
+  
+  .form h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  
+  .form button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Add media query for responsiveness (adjust breakpoint as needed) */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stack forms on small screens */
+    }
+  
+    .form-container {
+      width: 100%; /* Full width on small screens */
+    }
+  
+    .form {
+      margin-right: 0; /* Remove margin on small screens */
+    }
+  }
