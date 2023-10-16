@@ -18,3 +18,5 @@ dependencies for the frontend and backened downloaded, run:
 
    Licence
    MINT
+
+postgresql://foodsaver_user:FmRZuO1Ont79qcSfFX4hKZl9Glu1W9GP@dpg-ckmofii216ps73fp6me0-a.oregon-postgres.render.com/foodsaver
