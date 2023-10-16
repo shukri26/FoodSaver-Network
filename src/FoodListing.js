@@ -17,7 +17,7 @@ function FoodListing() {
 
   useEffect(() => {
     // Fetch food listings from the backend when the component mounts
-    fetch('http://127.0.0.1:5000/food_listings') // Replace with your backend URL
+    fetch('https://foodsaver.onrender.com/food_listings') // Replace with your backend URL
       .then((response) => response.json())
       .then((data) => {
         setFoodListings(data.food_listings);
@@ -40,7 +40,7 @@ function FoodListing() {
   const handleSubmitNewFoodListing = (e) => {
     e.preventDefault();
 
-    fetch('http://127.0.0.1:5000/food_listings', {
+    fetch('https://foodsaver.onrender.com/food_listings', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -50,7 +50,7 @@ function FoodListing() {
       .then((response) => {
         if (response.ok) {
           // Refresh the food listings after creating a new one
-          fetch('http://127.0.0.1:5000/food_listings')
+          fetch('https://foodsaver.onrender.com/food_listings')
             .then((response) => response.json())
             .then((data) => {
               setFoodListings(data.food_listings);
@@ -72,7 +72,7 @@ function FoodListing() {
   const handleSubmitNewFoodRequest = (e) => {
     e.preventDefault();
 
-    fetch('http://127.0.0.1:5000/food_requests', {
+    fetch('https://foodsaver.onrender.com/food_requests', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
